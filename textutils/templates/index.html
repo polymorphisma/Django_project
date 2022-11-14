@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      form.justified {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+
+    <title>Django first</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <h1 align="center">This is my first django projects</h1>
+    <form
+      action="/{{morse_code}}/"
+      method="post"
+      class="justified"
+      ,
+      id="form_id"
+    >
+    {% csrf_token %}
+      <input
+        name="text"
+        id="textarea_id"
+        cols="30"
+        rows="20"
+        data-dashlane-rid="59aec0270018e451"
+        style="height: 125px; width: 853px;"
+        data-form-type=""
+      ></input>
+      <button type="Submit" id="button_id">Submit</button>
+    </form>
+  </body>
+</html>
